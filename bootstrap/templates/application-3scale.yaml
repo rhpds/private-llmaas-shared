@@ -46,9 +46,14 @@ spec:
           - name: {{ $.Values.user.prefix }}{{ add $index 1}}
             password: openshift
             service: granite-3dot2-8b-instruct
+<<<<<<< HEAD
 {{- end }}
     - repoURL: https://github.com/redhat-gpte-devopsautomation/private-llm-aas
       targetRevision: main
+=======
+    - repoURL: {{ .Values.threeScale.repoURL }}
+      targetRevision: {{ .Values.threeScale.targetRevision }}
+>>>>>>> 6bda34d (adjusting application3-scale.yaml so that it uses helm values instead of hardcoding the repoURL and targetRevision)
       ref: values
   destination:
     namespace: {{ .Values.threeScale.namespace }}
