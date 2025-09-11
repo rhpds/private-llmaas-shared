@@ -37,8 +37,8 @@ hook:
       syncwave: "1"
 
 git:
-  repo: https://github.com/redhat-gpte-devopsautomation/private-llm-aas.git
-  ref: main
+  repo: https://github.com/taylorjordanNC/private-llm-aas.git
+  ref: llama32-3b
 
 cms:
   image: ghcr.io/fwmotion/3scale-cms:v2.0.1
