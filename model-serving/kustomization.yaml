@@ -27,4 +27,4 @@ resources:
 #- granite-inference-raw.yaml
 #- granite-8b/inferenceservice.yaml
 - llama32/
-- llama-guard/
+#- llama-guard/
