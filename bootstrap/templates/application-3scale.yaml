@@ -45,9 +45,10 @@ spec:
 {{- range $index := until $userCount }}
           - name: {{ $.Values.user.prefix }}{{ add $index 1}}
             password: openshift
-            service: granite-3dot2-8b-instruct
-    - repoURL: {{ .Values.threeScale.repoURL }}
-      targetRevision: {{ .Values.threeScale.targetRevision }}
+            service: llama32-3b
+{{- end }}
+    - repoURL: https://github.com/taylorjordanNC/private-llm-aas
+      targetRevision: main
       ref: values
   destination:
     namespace: {{ .Values.threeScale.namespace }}
