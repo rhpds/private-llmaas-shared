@@ -47,7 +47,7 @@ spec:
             password: openshift
             service: llama32-3b
 {{- end }}
-    - repoURL: https://github.com/taylorjordanNC/private-llm-aas
+    - repoURL: https://github.com/redhat-gpte-devopsautomation/private-llm-aas
       targetRevision: main
       ref: values
   destination:
