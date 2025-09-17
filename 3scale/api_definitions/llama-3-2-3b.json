@@ -284,112 +284,58 @@
                         "title": "Model"
                     },
                     "frequency_penalty": {
-                        "anyOf": [
-                            {
-                                "type": "number"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "number",
+                        "nullable": true,
                         "default": 0.0,
                         "title": "Frequency Penalty"
                     },
                     "logit_bias": {
-                        "anyOf": [
-                            {
-                                "additionalProperties": {
-                                    "type": "integer"
-                                },
-                                "type": "object"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "additionalProperties": {
+                            "type": "integer"
+                        },
+                        "type": "object",
+                        "nullable": true,
                         "default": null,
                         "title": "Logit Bias"
                     },
                     "logprobs": {
-                        "anyOf": [
-                            {
-                                "type": "boolean"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "boolean",
+                        "nullable": true,
                         "default": false,
                         "title": "Logprobs"
                     },
                     "top_logprobs": {
-                        "anyOf": [
-                            {
-                                "type": "integer"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "integer",
+                        "nullable": true,
                         "default": null,
                         "title": "Top Logprobs"
                     },
                     "max_tokens": {
-                        "anyOf": [
-                            {
-                                "type": "integer"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "integer",
+                        "nullable": true,
                         "default": null,
                         "title": "Max Tokens"
                     },
                     "n": {
-                        "anyOf": [
-                            {
-                                "type": "integer"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "integer",
+                        "nullable": true,
                         "default": 1,
                         "title": "N"
                     },
                     "presence_penalty": {
-                        "anyOf": [
-                            {
-                                "type": "number"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "number",
+                        "nullable": true,
                         "default": 0.0,
                         "title": "Presence Penalty"
                     },
                     "response_format": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/ResponseFormat"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "$ref": "#/components/schemas/ResponseFormat",
+                        "nullable": true,
                         "default": null
                     },
                     "seed": {
-                        "anyOf": [
-                            {
-                                "type": "integer"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "integer",
+                        "nullable": true,
                         "default": null,
                         "title": "Seed"
                     },
@@ -403,108 +349,58 @@
                                     "type": "string"
                                 },
                                 "type": "array"
-                            },
-                            {
-                                "type": "null"
                             }
                         ],
+                        "nullable": true,
                         "default": null,
                         "title": "Stop"
                     },
                     "stream": {
-                        "anyOf": [
-                            {
-                                "type": "boolean"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "boolean",
+                        "nullable": true,
                         "default": false,
                         "title": "Stream"
                     },
                     "stream_options": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/StreamOptions"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "$ref": "#/components/schemas/StreamOptions",
+                        "nullable": true,
                         "default": null
                     },
                     "temperature": {
-                        "anyOf": [
-                            {
-                                "type": "number"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "number",
+                        "nullable": true,
                         "default": 0.7,
                         "title": "Temperature"
                     },
                     "top_p": {
-                        "anyOf": [
-                            {
-                                "type": "number"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "number",
+                        "nullable": true,
                         "default": 1.0,
                         "title": "Top P"
                     },
                     "tools": {
-                        "anyOf": [
-                            {
-                                "items": {
-                                    "$ref": "#/components/schemas/ChatCompletionTool"
-                                },
-                                "type": "array"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "items": {
+                            "$ref": "#/components/schemas/ChatCompletionTool"
+                        },
+                        "type": "array",
+                        "nullable": true,
                         "default": null,
                         "title": "Tools"
                     },
                     "tool_choice": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/ChatCompletionToolChoiceOption"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "$ref": "#/components/schemas/ChatCompletionToolChoiceOption",
+                        "nullable": true,
                         "default": "none"
                     },
                     "parallel_tool_calls": {
-                        "anyOf": [
-                            {
-                                "type": "boolean"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "boolean",
+                        "nullable": true,
                         "default": true,
                         "title": "Parallel Tool Calls"
                     },
                     "user": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "default": null,
                         "title": "User"
                     },
@@ -514,14 +410,8 @@
                         "title": "Use Beam Search"
                     },
                     "best_of": {
-                        "anyOf": [
-                            {
-                                "type": "integer"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "integer",
+                        "nullable": true,
                         "default": null,
                         "title": "Best Of"
                     },
@@ -556,29 +446,17 @@
                         "title": "Ignore Eos"
                     },
                     "min_tokens": {
-                        "anyOf": [
-                            {
-                                "type": "integer"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "integer",
+                        "nullable": true,
                         "default": null,
                         "title": "Min Tokens"
                     },
                     "stop_token_ids": {
-                        "anyOf": [
-                            {
-                                "items": {
-                                    "type": "integer"
-                                },
-                                "type": "array"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "items": {
+                            "type": "integer"
+                        },
+                        "type": "array",
+                        "nullable": true,
                         "default": null,
                         "title": "Stop Token Ids"
                     },
@@ -593,14 +471,8 @@
                         "title": "Spaces Between Special Tokens"
                     },
                     "truncate_prompt_tokens": {
-                        "anyOf": [
-                            {
-                                "type": "integer"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "integer",
+                        "nullable": true,
                         "default": null,
                         "title": "Truncate Prompt Tokens"
                     },
@@ -616,74 +488,42 @@
                             },
                             {
                                 "type": "string"
-                            },
-                            {
-                                "type": "null"
                             }
                         ],
+                        "nullable": true,
                         "default": null,
                         "title": "Guided Json"
                     },
                     "guided_regex": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "default": null,
                         "title": "Guided Regex"
                     },
                     "guided_choice": {
-                        "anyOf": [
-                            {
-                                "items": {
-                                    "type": "string"
-                                },
-                                "type": "array"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array",
+                        "nullable": true,
                         "default": null,
                         "title": "Guided Choice"
                     },
                     "guided_grammar": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "default": null,
                         "title": "Guided Grammar"
                     },
                     "guided_decoding_backend": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "default": null,
                         "title": "Guided Decoding Backend"
                     },
                     "guided_whitespace_pattern": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "default": null,
                         "title": "Guided Whitespace Pattern"
                     }
@@ -716,41 +556,23 @@
                         "title": "Content"
                     },
                     "name": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "default": null,
                         "title": "Name"
                     },
                     "tool_calls": {
-                        "anyOf": [
-                            {
-                                "items": {
-                                    "$ref": "#/components/schemas/ChatCompletionMessageToolCall"
-                                },
-                                "type": "array"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "items": {
+                            "$ref": "#/components/schemas/ChatCompletionMessageToolCall"
+                        },
+                        "type": "array",
+                        "nullable": true,
                         "default": null,
                         "title": "Tool Calls"
                     },
                     "tool_call_id": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "default": null,
                         "title": "Tool Call Id"
                     }
@@ -769,26 +591,14 @@
                         "title": "Type"
                     },
                     "text": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "default": null,
                         "title": "Text"
                     },
                     "image_url": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/ChatCompletionContentPartImageParam"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "$ref": "#/components/schemas/ChatCompletionContentPartImageParam",
+                        "nullable": true,
                         "default": null
                     }
                 },
@@ -805,14 +615,8 @@
                         "title": "Url"
                     },
                     "detail": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "default": "auto",
                         "title": "Detail"
                     }
@@ -879,14 +683,8 @@
             "StreamOptions": {
                 "properties": {
                     "include_usage": {
-                        "anyOf": [
-                            {
-                                "type": "boolean"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "boolean",
+                        "nullable": true,
                         "default": false,
                         "title": "Include Usage"
                     }
@@ -918,26 +716,14 @@
                         "title": "Name"
                     },
                     "description": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "default": null,
                         "title": "Description"
                     },
                     "parameters": {
-                        "anyOf": [
-                            {
-                                "type": "object"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "object",
+                        "nullable": true,
                         "default": null,
                         "title": "Parameters"
                     }
@@ -1015,25 +801,13 @@
                         "title": "Choices"
                     },
                     "usage": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/UsageInfo"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "$ref": "#/components/schemas/UsageInfo",
+                        "nullable": true,
                         "default": null
                     },
                     "system_fingerprint": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "default": null,
                         "title": "System Fingerprint"
                     }
@@ -1058,25 +832,13 @@
                         "$ref": "#/components/schemas/ChatMessage"
                     },
                     "logprobs": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/LogProbs"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "$ref": "#/components/schemas/LogProbs",
+                        "nullable": true,
                         "default": null
                     },
                     "finish_reason": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "default": null,
                         "title": "Finish Reason"
                     },
@@ -1087,11 +849,9 @@
                             },
                             {
                                 "type": "string"
-                            },
-                            {
-                                "type": "null"
                             }
                         ],
+                        "nullable": true,
                         "default": null,
                         "title": "Stop Reason"
                     }
@@ -1110,29 +870,17 @@
                         "title": "Role"
                     },
                     "content": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "default": null,
                         "title": "Content"
                     },
                     "tool_calls": {
-                        "anyOf": [
-                            {
-                                "items": {
-                                    "$ref": "#/components/schemas/ChatCompletionMessageToolCall"
-                                },
-                                "type": "array"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "items": {
+                            "$ref": "#/components/schemas/ChatCompletionMessageToolCall"
+                        },
+                        "type": "array",
+                        "nullable": true,
                         "default": null,
                         "title": "Tool Calls"
                     }
@@ -1146,17 +894,11 @@
             "LogProbs": {
                 "properties": {
                     "content": {
-                        "anyOf": [
-                            {
-                                "items": {
-                                    "$ref": "#/components/schemas/ChatCompletionTokenLogprob"
-                                },
-                                "type": "array"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "items": {
+                            "$ref": "#/components/schemas/ChatCompletionTokenLogprob"
+                        },
+                        "type": "array",
+                        "nullable": true,
                         "default": null,
                         "title": "Content"
                     }
@@ -1175,17 +917,11 @@
                         "title": "Logprob"
                     },
                     "bytes": {
-                        "anyOf": [
-                            {
-                                "items": {
-                                    "type": "integer"
-                                },
-                                "type": "array"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "items": {
+                            "type": "integer"
+                        },
+                        "type": "array",
+                        "nullable": true,
                         "default": null,
                         "title": "Bytes"
                     },
@@ -1216,17 +952,11 @@
                         "title": "Logprob"
                     },
                     "bytes": {
-                        "anyOf": [
-                            {
-                                "items": {
-                                    "type": "integer"
-                                },
-                                "type": "array"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "items": {
+                            "type": "integer"
+                        },
+                        "type": "array",
+                        "nullable": true,
                         "default": null,
                         "title": "Bytes"
                     }
@@ -1249,14 +979,8 @@
                         "title": "Total Tokens"
                     },
                     "completion_tokens": {
-                        "anyOf": [
-                            {
-                                "type": "integer"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "integer",
+                        "nullable": true,
                         "default": null,
                         "title": "Completion Tokens"
                     }
@@ -1304,14 +1028,8 @@
                         "title": "Prompt"
                     },
                     "best_of": {
-                        "anyOf": [
-                            {
-                                "type": "integer"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "integer",
+                        "nullable": true,
                         "default": null,
                         "title": "Best Of"
                     },
@@ -1326,41 +1044,23 @@
                         "title": "Frequency Penalty"
                     },
                     "logit_bias": {
-                        "anyOf": [
-                            {
-                                "additionalProperties": {
-                                    "type": "number"
-                                },
-                                "type": "object"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "additionalProperties": {
+                            "type": "number"
+                        },
+                        "type": "object",
+                        "nullable": true,
                         "default": null,
                         "title": "Logit Bias"
                     },
                     "logprobs": {
-                        "anyOf": [
-                            {
-                                "type": "integer"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "integer",
+                        "nullable": true,
                         "default": null,
                         "title": "Logprobs"
                     },
                     "max_tokens": {
-                        "anyOf": [
-                            {
-                                "type": "integer"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "integer",
+                        "nullable": true,
                         "default": 16,
                         "title": "Max Tokens"
                     },
@@ -1375,14 +1075,8 @@
                         "title": "Presence Penalty"
                     },
                     "seed": {
-                        "anyOf": [
-                            {
-                                "type": "integer"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "integer",
+                        "nullable": true,
                         "default": null,
                         "title": "Seed"
                     },
@@ -1396,11 +1090,9 @@
                                     "type": "string"
                                 },
                                 "type": "array"
-                            },
-                            {
-                                "type": "null"
                             }
                         ],
+                        "nullable": true,
                         "default": null,
                         "title": "Stop"
                     },
@@ -1410,25 +1102,13 @@
                         "title": "Stream"
                     },
                     "stream_options": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/StreamOptions"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "$ref": "#/components/schemas/StreamOptions",
+                        "nullable": true,
                         "default": null
                     },
                     "suffix": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "default": null,
                         "title": "Suffix"
                     },
@@ -1443,14 +1123,8 @@
                         "title": "Top P"
                     },
                     "user": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "default": null,
                         "title": "User"
                     },
@@ -1485,17 +1159,11 @@
                         "title": "Early Stopping"
                     },
                     "stop_token_ids": {
-                        "anyOf": [
-                            {
-                                "items": {
-                                    "type": "integer"
-                                },
-                                "type": "array"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "items": {
+                            "type": "integer"
+                        },
+                        "type": "array",
+                        "nullable": true,
                         "default": null,
                         "title": "Stop Token Ids"
                     },
@@ -1520,14 +1188,8 @@
                         "title": "Spaces Between Special Tokens"
                     },
                     "truncate_prompt_tokens": {
-                        "anyOf": [
-                            {
-                                "type": "integer"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "integer",
+                        "nullable": true,
                         "default": null,
                         "title": "Truncate Prompt Tokens"
                     },
@@ -1543,74 +1205,42 @@
                             },
                             {
                                 "type": "string"
-                            },
-                            {
-                                "type": "null"
                             }
                         ],
+                        "nullable": true,
                         "default": null,
                         "title": "Guided Json"
                     },
                     "guided_regex": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "default": null,
                         "title": "Guided Regex"
                     },
                     "guided_choice": {
-                        "anyOf": [
-                            {
-                                "items": {
-                                    "type": "string"
-                                },
-                                "type": "array"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array",
+                        "nullable": true,
                         "default": null,
                         "title": "Guided Choice"
                     },
                     "guided_grammar": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "default": null,
                         "title": "Guided Grammar"
                     },
                     "guided_decoding_backend": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "default": null,
                         "title": "Guided Decoding Backend"
                     },
                     "guided_whitespace_pattern": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "default": null,
                         "title": "Guided Whitespace Pattern"
                     }
@@ -1673,25 +1303,13 @@
                         "title": "Text"
                     },
                     "logprobs": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/CompletionLogProbs"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "$ref": "#/components/schemas/CompletionLogProbs",
+                        "nullable": true,
                         "default": null
                     },
                     "finish_reason": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "default": null,
                         "title": "Finish Reason"
                     },
@@ -1702,11 +1320,9 @@
                             },
                             {
                                 "type": "string"
-                            },
-                            {
-                                "type": "null"
                             }
                         ],
+                        "nullable": true,
                         "default": null,
                         "title": "Stop Reason"
                     }
@@ -1729,14 +1345,8 @@
                     },
                     "token_logprobs": {
                         "items": {
-                            "anyOf": [
-                                {
-                                    "type": "number"
-                                },
-                                {
-                                    "type": "null"
-                                }
-                            ]
+                            "type": "number",
+                            "nullable": true
                         },
                         "type": "array",
                         "title": "Token Logprobs"
@@ -1750,17 +1360,11 @@
                     },
                     "top_logprobs": {
                         "items": {
-                            "anyOf": [
-                                {
-                                    "additionalProperties": {
-                                        "type": "number"
-                                    },
-                                    "type": "object"
-                                },
-                                {
-                                    "type": "null"
-                                }
-                            ]
+                            "additionalProperties": {
+                                "type": "number"
+                            },
+                            "type": "object",
+                            "nullable": true
                         },
                         "type": "array",
                         "title": "Top Logprobs"
@@ -1816,61 +1420,33 @@
                         "title": "Encoding Format"
                     },
                     "dimensions": {
-                        "anyOf": [
-                            {
-                                "type": "integer"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "integer",
+                        "nullable": true,
                         "default": null,
                         "title": "Dimensions"
                     },
                     "user": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "default": null,
                         "title": "User"
                     },
                     "extra_body": {
-                        "anyOf": [
-                            {
-                                "additionalProperties": {},
-                                "type": "object"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "additionalProperties": {},
+                        "type": "object",
+                        "nullable": true,
                         "default": null,
                         "title": "Extra Body"
                     },
                     "additional_data": {
-                        "anyOf": [
-                            {},
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "object",
+                        "nullable": true,
                         "default": null,
                         "title": "Additional Data"
                     },
                     "truncate_prompt_tokens": {
-                        "anyOf": [
-                            {
-                                "type": "integer"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "integer",
+                        "nullable": true,
                         "default": null,
                         "title": "Truncate Prompt Tokens"
                     }
@@ -1978,38 +1554,20 @@
                         "title": "Owned By"
                     },
                     "root": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "default": null,
                         "title": "Root"
                     },
                     "parent": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "default": null,
                         "title": "Parent"
                     },
                     "max_model_len": {
-                        "anyOf": [
-                            {
-                                "type": "integer"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "integer",
+                        "nullable": true,
                         "default": null,
                         "title": "Max Model Len"
                     },
@@ -2074,14 +1632,8 @@
                         "title": "Organization"
                     },
                     "group": {
-                        "anyOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "null"
-                            }
-                        ],
+                        "type": "string",
+                        "nullable": true,
                         "default": null,
                         "title": "Group"
                     },
