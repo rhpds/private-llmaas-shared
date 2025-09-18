@@ -1,8 +1,7 @@
 # https://github.com/3scale/3scale-operator/blob/master/doc/product-reference.md
 apis:
   - name: llama32-3b
-    # activeDocOpenAPIRef: https://github.com/redhat-gpte-devopsautomation/private-llm-aas/raw/refs/heads/main/3scale/api_definitions/llama-3-2-3b.json
-    activeDocOpenAPIRef: https://github.com/redhat-gpte-devopsautomation/private-llm-aas/raw/refs/heads/llama32-3b/3scale/api_definitions/llama-3-2-3b.json
+    activeDocOpenAPIRef: https://github.com/redhat-gpte-devopsautomation/private-llm-aas/raw/refs/heads/main/3scale/api_definitions/granite-3dot2-8b-instruct.json
     backend:
       privateBaseURL: http://llama32-3b-predictor.llm-hosting.svc.cluster.local:8080
       path: /
