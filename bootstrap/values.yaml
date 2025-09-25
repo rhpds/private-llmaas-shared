@@ -17,7 +17,7 @@ workspace:
     path: workspace
   devworkspace:
     projects:
-      repoUrl: https://github.com/taylorjordanNC/coding-exercises
+      repoUrl: https://github.com/redhat-gpte-devopsautomation/coding-exercises
       revision: main
     components:
       - name: tooling
@@ -32,6 +32,10 @@ threeScale:
   path: 3scale
   channel: threescale-2.15
   startingCSV: 3scale-operator.v0.12.3
+  values:
+    repoURL: https://github.com/redhat-gpte-devopsautomation/private-llm-aas
+    targetRevision: main
+    path: 3scale/helm-apis-values.yaml
 
 cmsUpload:
   repoURL: https://github.com/redhat-gpte-devopsautomation/private-llm-aas

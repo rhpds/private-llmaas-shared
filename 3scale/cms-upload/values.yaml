@@ -38,7 +38,7 @@ hook:
 
 git:
   repo: https://github.com/redhat-gpte-devopsautomation/private-llm-aas.git
-  ref: main
+  ref: llama32-3b
 
 cms:
   image: ghcr.io/fwmotion/3scale-cms:v2.0.1
