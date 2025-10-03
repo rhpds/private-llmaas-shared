@@ -1,9 +1,9 @@
 {
     "openapi": "3.0.3",
     "info": {
-        "title": "Granite-8B-Code-Instruct",
+        "title": "Llama",
         "version": "1.0.0",
-        "description": "Granite-8B-Code-Instruct-128K is a 8B parameter long-context instruct model fine tuned from Granite-8B-Code-Base-128K. Ref: https://huggingface.co/ibm-granite/granite-8b-code-instruct-128k"
+        "description": "Llama is a language model from Meta, providing high-quality text generation capabilities."
     },
     "paths": {
         "/health": {
